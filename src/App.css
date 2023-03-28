@@ -1,24 +1,320 @@
-.App {
+:root {
+  --white: white;
+  --background-color: #EEEEEE;
+  --primary-text: black;
+  --secondary-text: #777;
+  --primary-blue: #020F59;
+  --secondary-blue: #082B59;
+  --primary-gold: #F2CB05;
+  --secondary-gold: #F2B705;
+  font-family: 'Work Sans', sans-serif;
+}
+
+*,
+*::before,
+*::after { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#logo {
+  position: absolute;
+  transform: translate(20px, 20px);
+  margin: 0;
+  padding: 0;
+}
+
+#logo a img {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+figcaption {
+  display: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: var(--primary-blue);
+}
+
+h1 {
+  margin-left: 140px;
+  color: var(--primary-gold);
+  font-family: 'Libre Baskerville', serif;
+}
+
+h2, h3, nav ul li a {
+  font-family: 'Courier Prime', monospace;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3, nav ul li a {
+  font-size: 1.2em;
+}
+
+h3 {
+  margin-bottom: 10px;
+}
+
+nav {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-blue);
+  color: var(--secondary-gold);
+  width: 100%;
+  height: 71px;
+  border-top: #F2CB05 1px solid;
+}
+
+nav ul {
+  margin-left: 140px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: var(--secondary-gold);
+  margin-right: 24px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+#main_body {
+  display: flex;
+  justify-content: center;
+  margin: 40px 10% 70px;
+}
+
+#lower_main {
+  display: flex;
+  flex-direction: row;
+}
+
+#lower_main > * {
+  flex: 1 1 0;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+}
+
+#welcome, #news, #tickets, #merchandise, #membership {
+  box-sizing: border-box;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin: 0 20px 20px 0;
+  display: flex;
+}
+
+.text_container {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+#welcome_text {
+  width: 30%;
+}
+
+#welcome iframe {
+  flex-grow: 1;
+  aspect-ratio: 16/9;
+  width: 70%;
+  height: auto;
+  border-radius: 0px 10px 10px 0;
+}
+
+#schedule {
+  border: var(--primary-text) 1px solid;
+  color: var(--secondary-gold);
+  height: calc(100% - 20px);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#schedule th {
+  background-color: var(--white);
+  color: var(--primary-text);
+  height: 60px;
+}
+
+#schedule td {
+  border: var(--primary-text) 1px solid;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+#schedule tr {
+  background-color: var(--primary-blue);
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+#schedule a {
+  color: var(--primary-gold);
+  text-decoration: none;
 }
 
-.App-intro {
-  font-size: large;
+#schedule tr:nth-child(even) {
+  background-color: var(--secondary-blue);
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+#merch_grid {
+  width: calc(100% - 20px);
+  display: grid;
+  height: 100%;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  list-style-type: none;
+  column-gap: 20px;
+}
+
+#merch_grid li {
+  height: min-content;
+  margin-bottom: 10px;
+}
+
+#merch_grid li figure img {
+  display: block;
+  object-fit: cover;
+  aspect-ratio: 4/3;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#membership {
+  margin: 0 0 20px 0;
+  background-color: var(--primary-blue);
+  color: var(--secondary-gold);
+  height: 400px;
+}
+
+#sign_up {
+  width: 70%;
+}
+
+#sign_up > *, #signup > * > * {
+  margin-bottom: 10px;
+}
+
+#sign_up h3 {
+  color: var(--primary-gold);
+}
+
+#sign_up ul {
+  list-style-type: none;
+}
+
+label, input {
+  display: block;
+}
+
+input {
+  width: 100%;
+  height: 32px;
+}
+
+button {
+  width: 100%;
+  background-color: var(--primary-gold);
+  border: none;
+  border-radius: 10px;
+  height: 40px;
+  margin-top: 24px;
+}
+
+button:hover {
+  background-color: var(--secondary-gold);
+}
+
+input:focus {
+  outline: none;
+}
+
+#live_sports iframe {
+  background-color: var(--secondary-text);
+  height: 400px;
+  overflow-y: hidden;
+  border: none;
+  border-radius: 10px;
+}
+
+footer {
+  margin-top: auto;
+  color: var(--secondary-text);
+  width: 100%;
+  height: 70px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul {
+  list-style-type: none;
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer ul > * {
+  margin-right: 20px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.last {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1500px) {
+  #lower_main {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  #main_body {
+    flex-direction: column;
+  }
+  aside {
+    flex-direction: row;
+  }
+  #welcome, #news, #tickets, #merchandise, #membership {
+    margin: 0 0 20px 0;
+  }
+
+  #membership {
+    width: 70%;
+    margin-right: 20px;
+  }
 }
