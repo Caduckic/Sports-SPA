@@ -4,7 +4,7 @@ import SportsWidget from "./SportsWidget";
 
 const Aside = () => {
   return (
-    <aside>
+    <aside className="AsideSection">
       <Membership />
       <SportsWidget />
     </aside>

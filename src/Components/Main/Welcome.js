@@ -2,8 +2,8 @@ import React from "react";
 
 const Welcome = () => {
   return (
-    <section id="welcome">
-      <section id="welcome_text" className="text_container">
+    <section className="WelcomeSection">
+      <section className="WelcomeText">
         <h2>Welcome</h2>
         <p>Welcome to our club homepage, here at
           sports club we have all the things you

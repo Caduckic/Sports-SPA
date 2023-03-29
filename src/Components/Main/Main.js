@@ -6,16 +6,14 @@ import Merchandise from "./Merchandise";
 
 const Main = () => {
   return (
-    <div className="main_body">
-      <main>
-        <Welcome />
-        <section id="lower_main">
-          <News />
-          <Tickets />
-          <Merchandise />
-        </section>
-      </main>
-    </div>
+    <main className="Main">
+      <Welcome />
+      <section className="LowerMain">
+        <News />
+        <Tickets />
+        <Merchandise />
+      </section>
+    </main>
   )
 }
 

@@ -2,8 +2,8 @@ import React from "react";
 
 const News = () => {
   return (
-    <section id="news">
-      <section className="text_container">
+    <section className="NewsSection">
+      <section className="TextContainer">
         <h3>News</h3>
         <p>Recently we won against Other1, it was a
           long and narrow match. Our players and

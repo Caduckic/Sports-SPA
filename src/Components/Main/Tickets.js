@@ -2,10 +2,10 @@ import React from "react";
 
 const Tickets = () => {
   return (
-    <section id="tickets">
-      <section className="text_container">
+    <section className="TicketSection">
+      <section className="TextContainer">
         <h3>Schedule</h3>
-        <table id="schedule">
+        <table className="ScheduleTable">
           <tr>
               <th>Teams</th>
               <th>Date</th>

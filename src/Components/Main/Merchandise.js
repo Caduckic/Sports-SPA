@@ -6,7 +6,7 @@ const merchItems = [
 
 const MerchItem = ({ index, name }) => {
   return (
-    <li key={index} className="merch_item" id={name}>
+    <li key={index} className="MerchItem" id={name}>
       <figure>
         <img src={require("../../images/club_logo.jpg")} alt={name} />
         <figcaption>shirt</figcaption> 
@@ -17,29 +17,29 @@ const MerchItem = ({ index, name }) => {
 
 const Merchandise = () => {
   return (
-    <section id="merchandise">
-      <section className="text_container">
+    <section className="MerchSection">
+      <section className="TextContainer">
         <h3>Merch</h3>
-        <ul id="merch_grid">
-          <li className="merch_item" id="shirt">
+        <ul className="MerchGrid">
+          <li className="MerchItem" id="shirt">
             <figure>
               <img src={require("../../images/club_logo.jpg")} alt="shirt" />
               <figcaption>shirt</figcaption> 
             </figure>
           </li>
-          <li className="merch_item" id="hat">
+          <li className="MerchItem" id="hat">
             <figure>
               <img src={require("../../images/club_logo.jpg")} alt="hat" />
               <figcaption>hat</figcaption> 
             </figure>
           </li>
-          <li className="merch_item" id="football">
+          <li className="MerchItem" id="football">
             <figure>
               <img src={require("../../images/club_logo.jpg")} alt="football" />
               <figcaption>football</figcaption> 
             </figure>
           </li>
-          <li className="merch_item" id="mini_flags">
+          <li className="MerchItem" id="mini_flags">
             <figure>
               <img src={require("../../images/club_logo.jpg")} alt="mini flags" />
               <figcaption>mini flags</figcaption> 

@@ -2,11 +2,11 @@ import React from "react";
 
 const Membership = () => {
   return (
-    <section id="membership">
-      <section className="text_container">
-        <form id="sign_up" name="sign_up" action="#" method="post">
-          <h3 id="login_state">Sign Up</h3>
-          <ul id="inputs">
+    <section className="MembershipSection">
+      <section className="TextContainer">
+        <form className="SignUp" name="sign_up" action="#" method="post">
+          <h3>Sign Up</h3>
+          <ul className="Inputs">
             <li>
               <label for="email">Email</label>
               <input type="text" id="email" name="email" />

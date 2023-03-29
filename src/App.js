@@ -8,10 +8,10 @@ import "./App.css"
 
 const App = () => {
   return (
-    <div id="app">
+    <div id="App">
       <Header />
       <Navigation />
-      <section id="main_body">
+      <section className="MainBody">
         <Main />
         <Aside />
       </section>
