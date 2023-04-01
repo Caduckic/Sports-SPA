@@ -107,6 +107,10 @@ h3 {
   margin: 40px 10% 70px;
 }
 
+.Main {
+  width: 100%;
+}
+
 .LowerMain {
   display: flex;
   flex-direction: row;
@@ -119,14 +123,22 @@ h3 {
 .AsideSection {
   display: flex;
   flex-direction: column;
+  width: 30%;
 }
 
-.WelcomeSection, .NewsSection, .TicketSection, .MerchSection, .MembershipSection {
+.WelcomeSection, .NewsSection, .TicketSection, .MerchSection, .MembershipSection, .LiveSports {
   box-sizing: border-box;
   background-color: var(--white);
   border-radius: 10px;
   margin: 0 20px 20px 0;
   display: flex;
+}
+
+.LiveSports {
+  flex-direction: column;
+  margin-right: 0;
+  height: 400px;
+  padding: 20px;
 }
 
 .TextContainer {
@@ -245,20 +257,16 @@ button {
   margin-top: 24px;
 }
 
+.DataButton {
+  margin: 0;
+}
+
 button:hover {
   background-color: var(--secondary-gold);
 }
 
 input:focus {
   outline: none;
-}
-
-.LiveSports iframe {
-  background-color: var(--secondary-text);
-  height: 400px;
-  overflow-y: hidden;
-  border: none;
-  border-radius: 10px;
 }
 
 .Footer {
@@ -316,6 +324,10 @@ input:focus {
   animation: spin 1s infinite linear;
 }
 
+iframe {
+  border: 0;
+}
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
@@ -333,9 +345,10 @@ input:focus {
     flex-direction: column;
   }
   .AsideSection {
+    width: 100%;
     flex-direction: row;
   }
-  .WelcomeSection, .NewsSection, .TicketSection, .MerchSection, .MembershipSection {
+  .WelcomeSection, .NewsSection, .TicketSection, .MerchSection, .MembershipSection, .LiveSports {
     margin: 0 0 20px 0;
   }
 

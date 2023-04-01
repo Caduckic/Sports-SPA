@@ -21,9 +21,9 @@ const Welcome = () => {
       </section>
           <iframe
             src="https://www.youtube.com/embed/Rwk5PdpTxSU"
-            title="adidas | Ready for Sport" frameborder="0"
+            title="adidas | Ready for Sport"
             allow="accelerometer; autoplay;"
-            allowfullscreen></iframe>
+            allowFullScreen></iframe>
     </section>
   )
 }

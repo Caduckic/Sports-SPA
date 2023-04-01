@@ -2,7 +2,8 @@ import React, { Component } from "react";
 
 /*  
   This component is used to wrap around components that would most likely have a load time in real use, 
-  it is used by at least 2 other components (MerchItem and UserInfo)
+  it is used by at least 2 other components (MerchItem and UserInfo),
+  it is outside at the top level due to it's potential use by any component
 */
 const LoadingHOC = (OriginalComponent) => {
   return class extends Component {

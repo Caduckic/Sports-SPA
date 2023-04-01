@@ -9,11 +9,11 @@ const LoginForm = ({ handleLogin }) => {
       <h3>Sign Up</h3>
       <ul className="Inputs">
         <li>
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} id="email" name="email" />
         </li>
         <li>
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} id="password" name="password" />
         </li>
       </ul>

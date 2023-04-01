@@ -47,7 +47,7 @@ const Tickets = () => {
             </tr>
           </thead>
           <tbody>
-            {matches.map(match => <TicketRow match={match} />)}
+            {matches.map((match, index) => <TicketRow key={index} match={match} />)}
           </tbody>
         </table>
       </section>
