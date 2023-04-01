@@ -1,8 +1,12 @@
 import React from "react";
 
+/*
+  Basic section to display the news
+*/
+
 const News = () => {
   return (
-    <section className="NewsSection">
+    <section className="NewsSection" id="news">
       <section className="TextContainer">
         <h3>News</h3>
         <p>Recently we won against Other1, it was a

@@ -1,5 +1,9 @@
 import React from "react";
 
+/*
+  basic footer, no real functionality
+*/
+
 const Footer = () => {
   return (
     <footer className="Footer">

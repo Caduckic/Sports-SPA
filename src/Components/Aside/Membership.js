@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import LoginForm from "./LoginForm";
 import UserInfo from "./UserInfo";
 
+/*
+  This component handles if the login form or user info is shown, it's handed login state from the top.
+  login state might be better used with a library like redux but this works for now.
+*/
+
 const Membership = ({ loggedIn, setLoggedIn }) => {
   const [username, setUsername] = useState('')
 
@@ -26,7 +31,7 @@ const Membership = ({ loggedIn, setLoggedIn }) => {
   }
   
   return (
-    <section className="MembershipSection">
+    <section className="MembershipSection" id="membership">
       <section className="TextContainer">
         {!loggedIn 
           ? 

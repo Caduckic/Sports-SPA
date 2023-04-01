@@ -1,5 +1,6 @@
 import React from "react";
 
+// used for mapping into a table
 const matches = [
   {
     otherTeam: "other4",
@@ -21,6 +22,7 @@ const matches = [
   },
 ]
 
+// used to make the map function in Tickets more readable and clean
 const TicketRow = ({ match }) => {
   return (
     <tr>
@@ -32,9 +34,11 @@ const TicketRow = ({ match }) => {
   )
 }
 
+// used to display upcoming games and with booking links (not functional)
+
 const Tickets = () => {
   return (
-    <section className="TicketSection">
+    <section className="TicketSection" id="tickets">
       <section className="TextContainer">
         <h3>Schedule</h3>
         <table className="ScheduleTable">

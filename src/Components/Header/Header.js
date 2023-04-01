@@ -1,5 +1,9 @@
 import React from "react";
 
+/*
+  Header for the webpage, the syntax for getting the image is a bit different here due to using react
+*/
+
 const Header = () => {
   return (
     <div>

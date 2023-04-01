@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+/*
+  Basic login form with login fuction handed to it through props
+*/
+
 const LoginForm = ({ handleLogin }) => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')

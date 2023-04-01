@@ -1,5 +1,9 @@
 import React from "react";
 
+/*
+  Welcome section to give the user a greeting, it also has a embedded youtube video for a sports team
+*/
+
 const Welcome = () => {
   return (
     <section className="WelcomeSection">

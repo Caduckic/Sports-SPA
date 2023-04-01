@@ -4,6 +4,10 @@ import News from "./News";
 import Tickets from "./Tickets";
 import Merchandise from "./Merchandise";
 
+/*
+  used for rendering all the main section components of the webapp
+*/
+
 const Main = () => {
   return (
     <main className="Main">
