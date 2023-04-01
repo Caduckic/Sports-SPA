@@ -1,35 +1,54 @@
 import React from "react";
 
+const matches = [
+  {
+    otherTeam: "other4",
+    date: "24/03/2023",
+    location: "Marvel Stadium",
+    bookLink: "#"
+  },
+  {
+    otherTeam: "other5",
+    date: "14/05/2023",
+    location: "Allianz Stadium",
+    bookLink: "#"
+  },
+  {
+    otherTeam: "other6",
+    date: "08/07/2023",
+    location: "Marvel Stadium",
+    bookLink: "#"
+  },
+]
+
+const TicketRow = ({ match }) => {
+  return (
+    <tr>
+      <td>{`Club VS ${match.otherTeam}`}</td>
+      <td>{match.date}</td>
+      <td>{match.location}</td>
+      <td><a href={match.bookLink}>Buy Tickets</a></td>
+    </tr>
+  )
+}
+
 const Tickets = () => {
   return (
     <section className="TicketSection">
       <section className="TextContainer">
         <h3>Schedule</h3>
         <table className="ScheduleTable">
-          <tr>
-              <th>Teams</th>
-              <th>Date</th>
-              <th>Location</th>
-              <th>Tickets</th>
-          </tr>
-          <tr>
-              <td>Club VS other4</td>
-              <td>24/03/2023</td>
-              <td>Marvel Stadium</td>
-              <td><a href="#" onclick="bookTickets('other4');">Buy Tickets</a></td>
-          </tr>
-          <tr>
-              <td>Club VS other5</td>
-              <td>14/05/2023</td>
-              <td>Allianz Stadium</td>
-              <td><a href="#" onclick="bookTickets('other5');">Buy Tickets</a></td>
-          </tr>
-          <tr>
-              <td>Club VS other6</td>
-              <td>08/07/2023</td>
-              <td>Marvel Stadium</td>
-              <td><a href="#" onclick="bookTickets('other6');">Buy Tickets</a></td>
-          </tr>
+          <thead>
+            <tr>
+                <th>Teams</th>
+                <th>Date</th>
+                <th>Location</th>
+                <th>Tickets</th>
+            </tr>
+          </thead>
+          <tbody>
+            {matches.map(match => <TicketRow match={match} />)}
+          </tbody>
         </table>
       </section>
     </section>

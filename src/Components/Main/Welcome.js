@@ -19,7 +19,7 @@ const Welcome = () => {
           and want to bring you all quality matches
           and content!</p>
       </section>
-          <iframe 
+          <iframe
             src="https://www.youtube.com/embed/Rwk5PdpTxSU"
             title="adidas | Ready for Sport" frameborder="0"
             allow="accelerometer; autoplay;"
